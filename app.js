@@ -1,7 +1,4 @@
-if (process.env.NODE_ENV !== "production") {
-    require('dotenv').config();
-}
-
+const dotenv = require('dotenv').config({ override: true });
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -39,7 +36,6 @@ db.on("error", console.error.bind(console, " connection error:"));
 db.once("open", () => {
     console.log("Database Connected");
 })
-
 
 
 
