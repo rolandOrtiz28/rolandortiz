@@ -20,8 +20,8 @@ const helmet = require('helmet')
 const gi = require('gitignore');
 const MongoDBStore = require("connect-mongo");
 
-const dbUrl = 'mongodb://127.0.0.1:27017/yelp-camp'
-// process.env.DB_URL ||
+const dbUrl = process.env.DB_URL || 'mongodb://127.0.0.1:27017/yelp-camp'
+
 
 const userRoutes = require('./routes/users')
 const campgroundRoutes = require('./routes/campgroundsRoute');
