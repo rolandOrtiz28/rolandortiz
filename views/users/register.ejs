@@ -1,0 +1,108 @@
+<!-- <% layout('/layouts/boilerplate') %>
+    <h1>REGISTRATION FORM</h1>
+    <form action="/register" method="POST" class="validated-form" novalidate>
+        <div class="mb-3">
+            <label class="form-label" for="username">Username</label>
+            <input class="form-control" type="text" id="username" name="username" required>
+            <div class="valid-feedback">
+                Looks great!
+            </div>
+
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-control" type="email" id="email" name="email" required>
+            <div class="valid-feedback">
+                Looks great!
+            </div>
+
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="password">Password</label>
+            <input class="form-control" type="password" id="password" name="password" required>
+            <div class="valid-feedback">
+                Looks great!
+            </div>
+
+        </div>
+        <button class="btn btn-success">Register</button>
+    </form> -->
+
+
+
+<% layout('/layouts/boilerplate') %>
+    <link rel="stylesheet" href="/stylesheet/login.css">
+
+    <section class="h-100 gradient-form whole mb-5">
+        <div class="container d-flex py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-xl-10">
+                    <div class="card rounded-3 text-black">
+                        <div class="row g-0">
+                            <div class="col-lg-6">
+                                <div class="card-body p-md-5 mx-md-4">
+
+                                    <div class="text-center">
+                                        <img src="https://i.pinimg.com/564x/6c/bf/00/6cbf00a772725add422adf6bb976f6ba.jpg"
+                                            style="width: 185px;" alt="logo">
+                                        <h2 class="mt-1 mb-5 pb-1">YelpCamp</h2>
+                                    </div>
+
+                                    <form action="/register" method="POST" class="validated-form" novalidate>
+                                        <p>Please login to your account</p>
+
+                                        <div class="form-outline mb-4">
+                                            <input class="form-control" type="text" id="username" name="username"
+                                                placeholder="Username" required />
+                                            <label class="form-label" for="username">Username</label>
+                                            <div class="valid-feedback">
+                                                Looks great!
+                                            </div>
+                                        </div>
+                                        <div class="form-outline mb-4">
+                                            <input class="form-control" type="text" id="email" name="email"
+                                                placeholder="Email" required />
+                                            <label class="form-label" for="email">Email</label>
+                                            <div class="valid-feedback">
+                                                Looks great!
+                                            </div>
+                                        </div>
+
+                                        <div class="form-outline mb-4">
+                                            <input class="form-control" type="password" id="password" name="password"
+                                                required />
+                                            <label class="form-label" for="password">Password</label>
+                                            <div class="valid-feedback">
+                                                Looks great!
+                                            </div>
+                                        </div>
+
+
+                                        <button class="log-btn mb-3">Register</button>
+
+
+
+                                    </form>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                                    <center>
+                                        <h4 class="mb-4">"Enjoying camping is about disconnecting from the digital world
+                                            and reconnecting with nature."</h4>
+
+                                        <p class="small mb-0">Welcome to YelpCamp!! <br>Whether you're an experienced
+                                            camper or a first-timer, our website has everything you need to plan your
+                                            next wilderness excursion. From in-depth reviews of the best campgrounds and
+                                            hiking trails, to expert tips and advice on gear and equipment, we've got
+                                            you covered.</p>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

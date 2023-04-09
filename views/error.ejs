@@ -1,0 +1,18 @@
+<% layout('/layouts/boilerplate') %>
+    <div class="row">
+        <div class="col-6 offset-3">
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">
+                    <%=err.message %>
+                </h4>
+                <% if (process.env.NODE_ENV !=="production" ) {%>
+                    <p>
+                        <%= err.stack %>
+                    </p>
+                    <% } %>
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+            </div>
+
+        </div>
+    </div>

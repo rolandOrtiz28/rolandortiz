@@ -1,0 +1,71 @@
+<% layout('/layouts/boilerplate') %>
+    <link rel="stylesheet" href="/stylesheet/login.css">
+
+    <section class="h-100 gradient-form whole mb-5">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-xl-10">
+                    <div class="card rounded-3 text-black">
+                        <div class="row g-0">
+                            <div class="col-lg-6">
+                                <div class="card-body p-md-5 mx-md-4">
+
+                                    <div class="text-center">
+                                        <img src="https://i.pinimg.com/564x/6c/bf/00/6cbf00a772725add422adf6bb976f6ba.jpg"
+                                            style="width: 185px;" alt="logo">
+                                        <h2 class="mt-1 mb-5 pb-1">YelpCamp</h2>
+                                    </div>
+
+                                    <form action="/login" method="POST" class="validated-form" novalidate>
+                                        <p>Please login to your account</p>
+
+                                        <div class="form-outline mb-4">
+                                            <input class="form-control" type="text" id="username" name="username"
+                                                placeholder="Username" required />
+                                            <label class="form-label" for="username">Username</label>
+                                            <div class="valid-feedback">
+                                                Looks great!
+                                            </div>
+                                        </div>
+
+                                        <div class="form-outline mb-4">
+                                            <input class="form-control" type="password" id="password" name="password"
+                                                required />
+                                            <label class="form-label" for="password">Password</label>
+                                        </div>
+
+
+
+                                        <button class="log-btn mb-3">Login</button>
+
+
+
+
+                                        <div class="d-flex align-items-center justify-content-center pb-4">
+                                            <p class="mb-0 me-2">Don't have an account?</p>
+                                            <a class="reg" href="/register">Register Now!</a>
+
+                                            </label>
+                                        </div>
+
+                                    </form>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                                    <center>
+                                        <h4 class="mb-4">"Life is better around the campfire."</h4>
+
+                                        <p class="small mb-0">Welcome to YelpCamp!! <br>Looking for a way to escape the
+                                            hustle and bustle of everyday life? Look no further than our website, where
+                                            you'll find everything you need to plan the perfect camping trip.</p>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

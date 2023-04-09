@@ -1,0 +1,26 @@
+#cluster-map {
+    width: 100%;
+    height: 500px;
+
+}
+
+#map {
+    width: 620px;
+    height: 300px;
+    margin: .5rem;
+    padding: 1rem;
+}
+
+.img-show {
+    width: 550px;
+    height: 500px;
+
+}
+
+
+.bg-logo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+        url("https://i.pinimg.com/564x/6c/bf/00/6cbf00a772725add422adf6bb976f6ba.jpg");
+    background-position: center;
+    background-size: cover;
+}
