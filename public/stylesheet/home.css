@@ -1,7 +1,7 @@
 body {
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("https://images.unsplash.com/photo-1510312305653-8ed496efae75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+        url("https://images.unsplash.com/photo-1557551776-e28f2dd3b386?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEyfHxQaGlsaXBwaW5lcyUyMGJhciUyMDRrJTIwcmVzb2x1dGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
     background-size: cover;
     background-position: center;
     font-family: 'Montserrat', sans-serif;
@@ -14,11 +14,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .cover-container {
     max-width: 80vw;
 
+}
+
+.nav-brand {
+    color: #ffffff;
 }
 
 .nav-link {
@@ -27,6 +32,11 @@ body {
     color: rgba(255, 255, 255, 0.5);
     margin-left: 2rem;
     border-bottom: 0.15rem solid transparent;
+
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #ffffff;
 
 }
 
@@ -42,10 +52,24 @@ body {
     border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 
-.btn-secondary {
+.checkbtn {
+    font-size: 30px;
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: -10px;
+    display: none;
+}
+
+.myCheckBox {
+    display: none;
+}
+
+.view {
     align-items: center;
     background-color: transparent;
-    color: #000000;
+    color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
     display: flex;
     font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -53,14 +77,14 @@ body {
     font-weight: 700;
     line-height: 1.5;
     text-decoration: none;
-    text-transform: uppercase;
     outline: 0;
     border: 0;
     padding: 1rem;
+    text-shadow: #FC0 1px 0 10px;
 
 }
 
-.btn-secondary:before {
+.view:before {
     background-color: #000000;
     content: "";
     display: inline-block;
@@ -70,7 +94,12 @@ body {
     width: 0;
 }
 
-.btn-secondary:hover:before {
-    background-color: #000000;
+.view:hover:before {
+    background-color: #ffffff;
     width: 3rem;
+}
+
+.view:hover {
+    color: rgba(255, 204, 0, 0.652);
+    text-shadow: none;
 }
